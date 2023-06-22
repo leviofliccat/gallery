@@ -1,0 +1,20 @@
+.intro { 
+  text-align: center; 
+  font-family: Verdana;
+}
+body {
+    background-color: #b2d6f5;
+}
+
+h2 { 
+  font-size: 36px;
+}
+
+p { 
+  font-size: 14pt;
+}
+
+img {
+    width: 500px;
+    height: 500px;
+}

@@ -1,0 +1,1 @@
+const images = ["david_angry.png","david_blush.png","david_egg.png","david_flute.png","david_fluteplay.png","david_glare.png","david_laser.png","david_neutral.png","david_ohshit.png","david_sad.png","david_shocked.png","david_smile.png","david_tch.png",]
