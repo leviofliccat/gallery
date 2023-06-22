@@ -18,3 +18,9 @@ img {
     width: 500px;
     height: 500px;
 }
+
+
+
+.container-fluid{
+    align-items: left;
+}
