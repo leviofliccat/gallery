@@ -43,7 +43,7 @@ function nextImage(){
         currentImageIndex = 0;
     }
     var newImage = images[currentImageIndex];
-    currentImage.src = 'file:///C:/Users/Felicity/Desktop/website/images/' + newImage;
+    currentImage.src = 'images/' + newImage;
     var newName = newImage.split('_')[0];
     var captionText = captions[newName];
     var node = document.createTextNode(captionText);
@@ -58,7 +58,7 @@ function prevImage(){
         currentImageIndex = images.length - 1;
     }
     var newImage = images[currentImageIndex];
-    currentImage.src = 'file:///C:/Users/Felicity/Desktop/website/images/' + newImage;
+    currentImage.src = 'images/' + newImage;
     var newName = newImage.split('_')[0];
     var captionText = captions[newName];
     var node = document.createTextNode(captionText);
