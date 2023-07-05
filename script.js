@@ -4,7 +4,7 @@ var imageCaption = document.getElementById("caption");
 var x = 0;
 const people = ['david','mel','mitch','riley','will','babykuma'];
 const imageContainer = document.getElementById("top-thumbs");
-
+console.log(currentImage.src);
 for (image of images) {
     if (image.split('_')[0] == people[x]) {
         var gridElement = document.createElement('div');
@@ -43,11 +43,12 @@ function nextImage(){
         currentImageIndex = 0;
     }
     var newImage = images[currentImageIndex];
-    currentImage.src = 'images/' + newImage;
+    currentImage.src = 'file:///C:/Users/Felicity/Desktop/website/images/' + newImage;
     var newName = newImage.split('_')[0];
     var captionText = captions[newName];
     var node = document.createTextNode(captionText);
     imageCaption.replaceChild(node, imageCaption.childNodes[0]);
+    console.log(currentImage.src);
 };
 
 function prevImage(){
@@ -57,7 +58,7 @@ function prevImage(){
         currentImageIndex = images.length - 1;
     }
     var newImage = images[currentImageIndex];
-    currentImage.src = 'images/' + newImage;
+    currentImage.src = 'file:///C:/Users/Felicity/Desktop/website/images/' + newImage;
     var newName = newImage.split('_')[0];
     var captionText = captions[newName];
     var node = document.createTextNode(captionText);
